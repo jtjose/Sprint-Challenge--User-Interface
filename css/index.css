@@ -140,6 +140,7 @@ table {
 
 html,
 body {
+
     height: 100%;
     font-family: "Roboto", sans-serif;
 }
@@ -158,42 +159,72 @@ p {
     line-height: 1.4;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
-.highway {
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    width: 800px;
+.container-index {
+    width: 80%;
     margin: 0 auto;
 }
 
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    display: flex;
+    margin-top: 5px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .top-content {
+    width: 1700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 120px;
+    margin-top: 50px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+.top-content img {
+
+    width: 92%;
+    margin-top: -60px;
+    min-height: 212px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
 .top-content .text-container {
-    width: 48%;
+
+    width: 40%;
     padding: 0 1%;
     padding-bottom: 20px;
 }
 
 .middle-content {
+    width: 70%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin: 200px;
+    margin-top: 30px;
 }
 
 .middle-content h2 {
@@ -258,28 +289,18 @@ ul {
     background: dodgerblue;
 }
 
-.middle-info {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 8em;
-}
-
-.column {
-    flex: 50%
-}
-
-.work {
-    margin-left: 8em;
-}
-
 .bottom-content {
+    width: 70%;
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 150px;
+    margin-top: -10%;
+
 }
 
-.bottom-content .text-container {
+.text-container {
     padding-right: 4%;
+    width: 20%;
 }
 
 .bottom-content .text-container:last-child {
@@ -287,12 +308,14 @@ ul {
 }
 
 footer {
-    width: 100%;
+    margin: 200px;
+    margin-top: -7%;
+    width: 80%;
     background: black;
 }
 
 footer nav {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -305,9 +328,102 @@ footer nav a {
     text-decoration: none;
 }
 
-.skyline {
-    height: 10em;
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+header nav {
+    width: 150%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-top: 45px;
+}
+
+header nav a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+header img {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.skyline img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#about {
+    margin: 5px;
+    margin-top: 20px;
+
+}
+
+#leverage {
+    margin: 5px;
+    border-bottom: 1px dotted black;
+    margin-bottom: 20px;
+}
+
+.middle-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    height: 890px;
+    margin-left: 8em;
+}
+
+
+
+
+.middle-info .column {
+    width: 310px;
+    margin: 0px 200px;
+    margin-left: 10px;
+    border-bottom: 1px dashed black;
+    padding: 20px 0;
+}
+
+button {
+    border: 1.2px solid black;
+    background: white;
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.about-work {
+    display: flex;
+    flex-flow: wrap;
+    width: 47%;
+    margin: 0px auto;
+}
+
+.navbar {
+    margin: 180px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar a {
+    margin: 10px 10px 10px -190px;
+}
+
+.about-footer {
+    width: 900px;
+    margin-left: 31rem;
 }
